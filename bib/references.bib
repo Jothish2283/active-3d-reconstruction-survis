@@ -1,0 +1,132 @@
+@article{1,
+title = {A structured review and taxonomy of next-best-view strategies for 3D reconstruction},
+journal = {ISPRS Open Journal of Photogrammetry and Remote Sensing},
+keywords = {next-best-view, active reconstruction, taxonomy, viewpoint planning, occupancy mapping, exploration},
+volume = {17},
+pages = {100098},
+year = {2025},
+issn = {2667-3932},
+doi = {https://doi.org/10.1016/j.ophoto.2025.100098},
+url = {https://www.sciencedirect.com/science/article/pii/S2667393225000171},
+author = {Bashar Alsadik and Hussein Alwan Mahdi and Nagham Amer Abdulateef},
+keywords = {Next best view, Active perception, Uncertainty NBV, Reinforcement learning, 3D reconstruction, Robotic exploration, Autonomous systems},
+abstract = {Next-Best-View (NBV) strategies are a class of approaches that solve the important problem of selecting the best possible viewpoints of an autonomous robot sensor for effective and complete 3D scene reconstruction. NBV methodologies have developed significantly over the years from rule-based approaches to those driven from deep learning. Consequently, NBV strategies have become diverse and uncategorized which makes it difficult for researchers and practitioners to navigate or standardize the methods. Therefore, in this paper, a comprehensive review was conducted to separate NBV methods into five distinct strategies: rule-based, uncertainty-based, sampling-based, learning-based, and prediction-based approaches. It is aimed to give a structured understanding after systematically reviewing over 100 publications including outlining key methodologies, open-access tools, and respective applications. Each strategy is investigated with related research questions such as understanding the role of geometric heuristics in rule-based methods, identifying efficient sampling mechanisms for exploration, leveraging predictive models for optimization, addressing uncertainty in unknown environments, and applying learning-based techniques to enhance adaptability and performance. Some suggestions are made for making classifications explicit, thus helping pull together more organized frameworks and collaborations across disciplines. This work not only offers a comprehensive resource for beginners and expert researchers but also empowers readers to answer strategy-specific research questions, providing actionable insights into NBV planning trends and emerging perspectives.}
+}
+
+@InProceedings{2,
+author="Klasson, Marcus
+and Mereu, Riccardo
+and Kannala, Juho
+and Solin, Arno",
+keywords = {uncertainty estimation, epistemic uncertainty, aleatoric uncertainty, 3D reconstruction, uncertainty propagation},
+editor="Del Bue, Alessio
+and Canton, Cristian
+and Pont-Tuset, Jordi
+and Tommasi, Tatiana",
+title="Sources of Uncertainty in 3D Scene Reconstruction",
+url= {https://aaltoml.github.io/uncertainty-nerf-gs/},
+booktitle="Computer Vision -- ECCV 2024 Workshops",
+year="2025",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="271--289",
+abstract="The process of 3D scene reconstruction can be affected by numerous uncertainty sources in real-world scenes. While Neural Radiance Fields (NeRFs) and 3D Gaussian Splatting (GS) achieve high-fidelity rendering, they lack built-in mechanisms to directly address or quantify uncertainties arising from the presence of noise, occlusions, confounding outliers, and imprecise camera pose inputs. In this paper, we introduce a taxonomy that categorizes different sources of uncertainty inherent in these methods. Moreover, we extend NeRF- and GS-based methods with uncertainty estimation techniques, including learning uncertainty outputs and ensembles, and perform an empirical study to assess their ability to capture the sensitivity of the reconstruction. Our study highlights the need for addressing various uncertainty aspects when designing NeRF/GS-based methods for uncertainty-aware 3D reconstruction.",
+isbn="978-3-031-91585-7"
+}
+
+@ARTICLE{3,
+  author={Lee, Soomin and Chen, Le and Wang, Jiahao and Liniger, Alexander and Kumar, Suryansh and Yu, Fisher},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Uncertainty Guided Policy for Active Robotic 3D Reconstruction Using Neural Radiance Fields}, 
+  keywords = {NeRF, active reconstruction, uncertainty-aware exploration, robotic mapping, neural implicit representation},
+  year={2022},
+  volume={7},
+  number={4},
+  pages={12070-12077},
+  keywords={Three-dimensional displays;Robots;Shape;Uncertainty;Rendering (computer graphics);Task analysis;Robot sensing systems;Active 3D reconstruction;robot vision;neural radiance fields;next-best-view selection;uncertainty estimation},
+  doi={10.1109/LRA.2022.3212668}}
+
+
+@misc{4,
+      title={Uncertainty-Driven Active Vision for Implicit Scene Reconstruction}, 
+      keywords = {active vision, uncertainty-guided sampling, implicit reconstruction, information gain, viewpoint optimization},
+      author={Edward J. Smith and Michal Drozdzal and Derek Nowrouzezahrai and David Meger and Adriana Romero-Soriano},
+      year={2022},
+      eprint={2210.00978},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2210.00978}, 
+}
+
+@article{5,
+author = {Li, Haiyi and Chen, Qi and Kalkofen, Denis and Chen, Hsiang-Ting},
+title = {OUGS: Active View Selection via Object-aware Uncertainty Estimation in 3DGS},
+keywords = {3D Gaussian Splatting, object-aware uncertainty, active view selection, semantic reconstruction, uncertainty estimation},
+journal = {Computer Graphics Forum},
+volume = {n/a},
+number = {n/a},
+pages = {e70363},
+keywords = {CCS Concepts, • Computing methodologies → Reconstruction, Active vision, Image-based rendering, 3D Reconstruction, Computing methodologies Shape analysis, Active Vision, 3D Gaussian Splatting},
+doi = {https://doi.org/10.1111/cgf.70363},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1111/cgf.70363},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1111/cgf.70363},
+abstract = {Abstract Recent advances in 3D Gaussian Splatting (3DGS) have achieved state-of-the-art results for novel view synthesis. However, efficiently capturing high-fidelity reconstructions of specific objects within complex scenes remains a significant challenge. A key limitation of existing active reconstruction methods is their reliance on scene-level uncertainty metrics, which are often biased by irrelevant background clutter and lead to inefficient view selection for object-centric tasks. We present OUGS, a novel framework that addresses this challenge with a more principled, physically-grounded uncertainty formulation for 3DGS. Our core innovation is to derive uncertainty directly from the explicit physical parameters of the 3D Gaussian primitives (e.g., position, scale, rotation). By propagating the covariance of these parameters through the rendering Jacobian, we establish a highly interpretable uncertainty model. This foundation allows us to then seamlessly integrate semantic segmentation masks to produce a targeted, object-aware uncertainty score that effectively disentangles the object from its environment. This allows for a more effective active view selection strategy that prioritizes views critical to improving object fidelity. Experimental evaluations on public datasets demonstrate that our approach significantly improves the efficiency of the 3DGS reconstruction process and achieves higher quality for targeted objects compared to existing state-of-the-art methods, while also serving as a robust uncertainty estimator for the global scene.}
+}
+
+@INPROCEEDINGS{6,
+  author={Pan, Sicong and Jin, Liren and Huang, Xuying and Stachniss, Cyrill and Popović, Marija and Bennewitz, Maren},
+  booktitle={2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
+  title={Exploiting Priors from 3D Diffusion Models for RGB-Based One-Shot View Planning},
+  keywords = {diffusion priors, view planning, semantic priors, geometry prediction, one-shot reconstruction}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={13341-13348},
+  keywords={Geometry;Solid modeling;Three-dimensional displays;Pipelines;Data collection;Diffusion models;Planning;Image reconstruction;Optimization;Intelligent robots},
+  doi={10.1109/IROS58592.2024.10802551}}
+
+@article{7,
+   title={Bag of Views: An Appearance-Based Approach to Next-Best-View Planning for 3D Reconstruction},
+   keywords = {appearance-based planning, next-best-view, active exploration, visual similarity, viewpoint selection},
+   volume={9},
+   ISSN={2377-3774},
+   url={http://dx.doi.org/10.1109/LRA.2023.3333702},
+   DOI={10.1109/lra.2023.3333702},
+   number={1},
+   journal={IEEE Robotics and Automation Letters},
+   publisher={Institute of Electrical and Electronics Engineers (IEEE)},
+   author={Gazani, Sara Hatami and Tucsok, Matthew and Mantegh, Iraj and Najjaran, Homayoun},
+   year={2024},
+   month=Jan, pages={295–302} }
+
+
+@INPROCEEDINGS{8,
+  author={Bircher, Andreas and Kamel, Mina and Alexis, Kostas and Oleynikova, Helen and Siegwart, Roland},
+  booktitle={2016 IEEE International Conference on Robotics and Automation (ICRA)}, 
+  title={Receding Horizon "Next-Best-View" Planner for 3D Exploration}, 
+  keywords = {receding horizon planning, frontier exploration, occupancy grids, robotic exploration, geometric planning},
+  year={2016},
+  volume={},
+  number={},
+  pages={1462-1468},
+  keywords={Vehicles;Robot sensing systems;Space exploration;Planning;Navigation;Three-dimensional displays},
+  doi={10.1109/ICRA.2016.7487281}}
+
+@inproceedings{9,
+  title={Neural Visibility Field for Uncertainty-Driven Active Mapping},
+  keywords = {visibility estimation, active mapping, uncertainty-aware exploration, neural visibility field, occlusion reasoning},
+  author={Xue, Shangjie and Dill, Jesse and Mathur, Pranay and Dellaert, Frank and Tsiotras, Panagiotis and Xu, Danfei},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={18122--18132},
+  url= {https://sites.google.com/view/nvf-cvpr24/},
+  year={2024}
+}
+
+@article{10,
+  title={{NeuralRecon}: Real-Time Coherent {3D} Reconstruction from Monocular Video},
+  keywords = {real-time reconstruction, monocular reconstruction, neural geometry fusion, implicit reconstruction, scene consistency},
+  author={Sun, Jiaming and Xie, Yiming and Chen, Linghao and Zhou, Xiaowei and Bao, Hujun},
+  journal={CVPR},
+  url= {https://zju3dv.github.io/neuralrecon/},
+  year={2021}
+}
